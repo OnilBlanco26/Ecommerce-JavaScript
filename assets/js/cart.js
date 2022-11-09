@@ -3,28 +3,164 @@
 const db = [
   {
     id: 1,
-    name: 'Camisa',
+    name: 'I9-13900K',
     price: 456,
-    image: 'assets/img/featured1.png',
-    category: 'hoodies',
+    image: 'assets/img/i9-13900k.png',
+    category: 'CPUs',
     quantity: 5
   },
   {
     id: 2,
-    name: 'Playera',
+    name: 'I9-12900kf',
     price: 627,
-    image: 'assets/img/featured2.png',
-    category: 'shirts',
+    image: 'assets/img/i9-12900kf.png',
+    category: 'CPUs',
     quantity: 7
   },
   {
     id: 3,
-    name: 'Sudadera',
+    name: 'Ryzen 7950X',
     price: 586,
-    image: 'assets/img/featured3.png',
-    category: 'swetshirts',
+    image: 'assets/img/ryzen-7950X.png',
+    category: 'CPUs',
     quantity: 4
-  }
+  },
+  {
+    id: 4,
+    name: 'Ryzen 7900X',
+    price: 586,
+    image: 'assets/img/ryzen-7900X.png',
+    category: 'CPUs',
+    quantity: 4
+  },
+  {
+    id: 5,
+    name: 'Ryzen 7700X',
+    price: 586,
+    image: 'assets/img/ryzen-7700X.png',
+    category: 'CPUs',
+    quantity: 4
+  },
+  {
+    id: 6,
+    name: 'RTX 4090 GYGABYTE',
+    price: 4000,
+    image: 'assets/img/rtx_4090.png',
+    category: 'GPUs',
+    quantity: 4
+  },
+  {
+    id: 7,
+    name: 'NVDIA RTX 3090 MSI',
+    price: 586,
+    image: 'assets/img/rtx-3090-msi.png',
+    category: 'GPUs',
+    quantity: 4
+  },
+  {
+    id: 8,
+    name: 'NVDIA RTX 3080 MSI',
+    price: 586,
+    image: 'assets/img/rtx-3080-msi.png',
+    category: 'GPUs',
+    quantity: 4
+  },
+  {
+    id: 9,
+    name: 'Radeon 6600 XT MSI',
+    price: 586,
+    image: 'assets/img/radeon-6600xt.png',
+    category: 'GPUs',
+    quantity: 4
+  },
+  {
+    id: 10,
+    name: 'Radeon 6500 XT GIGABYTE',
+    price: 586,
+    image: 'assets/img/radeon-6600xt.png',
+    category: 'GPUs',
+    quantity: 4
+  },
+  {
+    id: 11,
+    name: 'GYGABYTE Z790 Aero G',
+    price: 586,
+    image: 'assets/img/GIGABYTE-Z790-AERO-G.png',
+    category: 'Motherboard',
+    quantity: 4
+  },
+  {
+    id: 12,
+    name: 'GIGABYTE Z690I AORUS Ultra Plus D4',
+    price: 586,
+    image: 'assets/img/GIGABYTE-Z690I-AORUS-Ultra-Plus-D4.png',
+    category: 'Motherboard',
+    quantity: 4
+  },
+  {
+    id: 13,
+    name: 'ASUS TUF Gaming X670E PLUS',
+    price: 586,
+    image: 'assets/img/ASUS-TUF-Gaming-X670E-PLUS.png',
+    category: 'Motherboard',
+    quantity: 4
+  },
+  {
+    id: 14,
+    name: 'ASUS ROG Strix X670E E',
+    price: 586,
+    image: 'assets/img/ASUS-ROG-Strix-X670E-E.png',
+    category: 'Motherboard',
+    quantity: 4
+  },
+  {
+    id: 15,
+    name: 'ASUS ROG Crosshair X670E Hero',
+    price: 586,
+    image: 'assets/img/ASUS-ROG-Crosshair-X670E-Hero.png',
+    category: 'Motherboard',
+    quantity: 4
+  },
+  {
+    id: 16,
+    name: 'Dominator DDR5 2x32 GB 6200 mHz',
+    price: 586,
+    image: 'assets/img/dominator-DDR5-2x32gb-6200mhz.png',
+    category: 'RAM',
+    quantity: 4
+  },
+  {
+    id: 17,
+    name: 'Corsair DDR5 2x32 GB 5500 mHz',
+    price: 586,
+    image: 'assets/img/corsair-DDR5-2x32gb-5500mhz.png',
+    category: 'RAM',
+    quantity: 4
+  },
+  {
+    id: 18,
+    name: 'Dominator DDR5 2x16 GB 5600 mHz',
+    price: 586,
+    image: 'assets/img/dominator-DDR5-2x16gb-5600mhz.png',
+    category: 'RAM',
+    quantity: 4
+  },
+  {
+    id: 19,
+    name: 'Vengeance DDR5 2x16 GB 6000 mHz',
+    price: 586,
+    image: 'assets/img/vengeance-DDR5-2x16gb-6000mhz.png',
+    category: 'RAM',
+    quantity: 4
+  },
+  {
+    id: 20,
+    name: 'Vengeance DDR4 2x16 GB 3600 mHz',
+    price: 586,
+    image: 'assets/img/vengeance-DDR4-2x16gb-3600mhz.png',
+    category: 'RAM',
+    quantity: 4
+  },
 ]
 
 const products = window.localStorage.getItem('productsDB') ? JSON.parse(window.localStorage.getItem('productsDB')) : db
@@ -37,7 +173,7 @@ function printProducts() {
 
   for (let product of products) {
     html += `
-    <article class="products__card hoodies">
+    <article class="products__card ${product.category}">
     <div class="products__shape">
       <img src="${product.image}" alt="${product.name}" class="products__img">
     </div>
