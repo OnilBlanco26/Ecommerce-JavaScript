@@ -6,8 +6,8 @@
   --header-height: 3.5rem;
 
   /*========== Colors ==========*/
-  --first-color:  linear-gradient(to top, #FFF94C, #004FF9); 
-  --first-color-text: #004FF9;
+  --first-color:  linear-gradient(to bottom, #f5af19, #f12711); 
+  --first-color-text: #f5af19;
   --button-color: hsl(0, 0%, 17%);
   --button-color-alt: hsl(0, 0%, 21%);
   --card-color: hsl(0, 0%, 90%);
@@ -114,8 +114,8 @@ button {
 /*=============== THEME ===============*/
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
-  --first-color: linear-gradient(to top,  #004FF9,#FFF94C); 
-  --first-color-text: #FFF94C;
+  --first-color: linear-gradient(to bottom, #f12711 ,#f5af19);
+  --first-color-text: #f12711;
   --button-color: hsl(246, 16%, 12%);
   --button-color-alt: hsl(0, 0%, 28%);
   --card-color: hsla(246, 16%, 5%, .5);
@@ -450,17 +450,17 @@ body.dark-theme {
 }
 
 .home__button:hover {
-  box-shadow: 1px -1px 1px #FFF94C,
-  2px -2px 1px #004FF9,
-  3px -3px 1px #004FF9,
-  4px -4px 1px #004FF9,
-  5px -5px 1px #004FF9,
-  6px -6px 1px #004FF9,
-  7px -7px 1px #004FF9,
-  8px -8px 1px #004FF9,
-  9px -9px 1px #004FF9,
-  10px -10px 1px #004FF9,
-  11px -11px 1px #FFF94C;
+  box-shadow: 1px -1px 1px #f12711,
+  2px -2px 1px #f5af19,
+  3px -3px 1px #f5af19,
+  4px -4px 1px #f5af19,
+  5px -5px 1px #f5af19,
+  6px -6px 1px #f5af19,
+  7px -7px 1px #f5af19,
+  8px -8px 1px #f5af19,
+  9px -9px 1px #f5af19,
+  10px -10px 1px #f5af19,
+  11px -11px 1px #f12711;
   color: black;
 }
 
@@ -965,8 +965,8 @@ body.dark-theme {
     content: '';
     right: 0;
     top: 0;
-    border-top: 3px solid #FFF94C;
-    border-right: 3px solid #004FF9;
+    border-top: 3px solid #f12711;
+    border-right: 3px solid #f5af19;
     transform: translate(-100%, 50%);
   }
   
@@ -974,8 +974,8 @@ body.dark-theme {
     content: '';
     left: 0;
     bottom: 0;
-    border-bottom: 3px solid #FFF94C;
-    border-left: 3px solid #004FF9;
+    border-bottom: 3px solid #f12711;
+    border-left: 3px solid #f5af19;
     transform: translate(100%, -50%)
   }
   
