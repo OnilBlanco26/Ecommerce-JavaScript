@@ -593,12 +593,12 @@ body.dark-theme {
                 translateZ(120px);
   }
   80%{
-    transform: perspective(100px)
+    transform: perspective(200px)
                 rotateY(360deg)
                 translateZ(0px);
   } 
   100%{
-    transform: perspective(100px)
+    transform: perspective(200px)
                rotateY(360deg);
   }
 }
