@@ -526,7 +526,7 @@ body.dark-theme {
 
 .products__img {
   width: 150px;
-  transition: .4s;
+  
 }
 
 .products__shape {
@@ -572,9 +572,31 @@ body.dark-theme {
   box-shadow: 0 4px 12px hsla(206, 4%, 4%, .2);
 }
 
+/* animacion giro Inicio  */
+
+
+
 .products__card:hover .products__img {
-  transform: translateY(-.25rem);
+  animation: 1s velozIn 1;
 }
+
+@keyframes velozIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-200%)
+                skewX(30deg);
+  }
+  60%{
+    transform: translateX(-20%)
+                skewX(-30deg);
+  }
+  80%{
+    transform: translateX(0%)
+                skewX(15deg);
+  }
+}
+
+/* animacion giro Fin  */
 
 /* Active link products */
 .active-product .products__title {
