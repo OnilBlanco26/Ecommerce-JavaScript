@@ -577,23 +577,30 @@ body.dark-theme {
 
 
 .products__card:hover .products__img {
-  animation: 2s giro 1;
+  animation: 1s giro 1;
   backface-visibility: visible;
 }
 
 @keyframes giro {
   40% {
     transform: perspective(100px)
-                rotateY(170deg);
+                rotateY(170deg)
+                translateZ(120px);
   }
   50%{
     transform: perspective(100px)
-                rotateY(190 deg);
+                rotateY(190deg)
+                translateZ(120px);
   }
   80%{
     transform: perspective(100px)
-                rotateY(360deg);
+                rotateY(360deg)
+                translateZ(0px);
   } 
+  100%{
+    transform: perspective(100px)
+               rotateY(360deg);
+  }
 }
 
 /* animacion giro Fin  */
