@@ -577,23 +577,23 @@ body.dark-theme {
 
 
 .products__card:hover .products__img {
-  animation: 1s velozIn 1;
+  animation: 2s giro 1;
+  backface-visibility: visible;
 }
 
-@keyframes velozIn {
-  0% {
-    opacity: 0;
-    transform: translateX(-200%)
-                skewX(30deg);
+@keyframes giro {
+  40% {
+    transform: perspective(100px)
+                rotateY(170deg);
   }
-  60%{
-    transform: translateX(-20%)
-                skewX(-30deg);
+  50%{
+    transform: perspective(100px)
+                rotateY(190 deg);
   }
   80%{
-    transform: translateX(0%)
-                skewX(15deg);
-  }
+    transform: perspective(100px)
+                rotateY(360deg);
+  } 
 }
 
 /* animacion giro Fin  */
