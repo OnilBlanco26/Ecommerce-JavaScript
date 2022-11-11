@@ -367,32 +367,25 @@ body.dark-theme {
 }
 
 .home__img {
+  position: absolute;
   width: 80%;
-  animation: 3s cartel infinite;
+  transform: translateX(0);
+  transform: translateY(-6px);
+  animation: 1.5s movercaja infinite;
 }
 
-/* Animacion Cartel Inicio  */
+/* Animacion mover Inicio  */
 
-@keyframes cartel {
-  10% ,50%{
-    transform: perspective(100px)
-                
-                translateZ(-200px)
-                rotate(360deg);
+@keyframes movercaja{
+  50%{
+      transform: translateY(-3px);
   }
-  
-  60%, 90%{
-    transform: 
-    translateZ(-200px)
-     ;           ;
-  } 
-  100%{
-    transform: translateZ(0px);
-  }
-  
 }
 
-/* Animacion Cartel Fin  */
+
+
+
+/* Animacion mover Fin  */
 
 
 .home__img-bg {
