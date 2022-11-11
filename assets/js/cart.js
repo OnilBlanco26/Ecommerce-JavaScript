@@ -67,17 +67,17 @@ const db = [
   },
   {
     id: 9,
-    name: 'Radeon 6600 XT MSI',
+    name: 'Radeon 6950 XT MSI',
     price: 586,
-    image: 'assets/img/radeon-6600xt.png',
+    image: 'assets/img/radeon-6950XT.png',
     category: 'GPUs',
     quantity: 4
   },
   {
     id: 10,
-    name: 'Radeon 6500 XT GIGABYTE',
+    name: 'Radeon 6900 XT Aorus',
     price: 586,
-    image: 'assets/img/radeon-6600xt.png',
+    image: 'assets/img/radeon-6900XT.png',
     category: 'GPUs',
     quantity: 4
   },
@@ -362,6 +362,18 @@ function numberToCurrency(value) {
 printCart()
 
 productContainer.addEventListener('click', function (e) {
+  const add = e.target.closest('.addToCart')
+
+  if (add) {
+    const id = +add.dataset.id
+    addToCart(id)
+  }
+  console.log('me estoy ejecutando')
+})
+
+const homeButton = document.getElementById('home-button')
+
+homeButton.addEventListener('click', function (e) {
   const add = e.target.closest('.addToCart')
 
   if (add) {
