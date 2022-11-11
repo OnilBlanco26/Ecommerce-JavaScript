@@ -371,6 +371,17 @@ productContainer.addEventListener('click', function (e) {
   console.log('me estoy ejecutando')
 })
 
+const homeButton = document.getElementById('home-button')
+
+homeButton.addEventListener('click', function (e) {
+  const add = e.target.closest('.addToCart')
+
+  if (add) {
+    const id = +add.dataset.id
+    addToCart(id)
+  }
+})
+
 cartContainer.addEventListener('click', function (e) {
   const remove = e.target.closest('.removeToCart')
   const add = e.target.closest('.addToCart')
