@@ -4,162 +4,162 @@ const db = [
   {
     id: 1,
     name: 'I9-13900K',
-    price: 456,
+    price: 15500,
     image: 'assets/img/i9-13900k.png',
     category: 'CPUs',
-    quantity: 5
+    quantity: 37
   },
   {
     id: 2,
     name: 'I9-12900kf',
-    price: 627,
+    price: 11600,
     image: 'assets/img/i9-12900kf.png',
     category: 'CPUs',
-    quantity: 7
+    quantity: 53
   },
   {
     id: 3,
     name: 'Ryzen 7950X',
-    price: 586,
+    price: 10150,
     image: 'assets/img/ryzen-7950X.png',
     category: 'CPUs',
-    quantity: 4
+    quantity: 41
   },
   {
     id: 4,
     name: 'Ryzen 7900X',
-    price: 586,
+    price: 8700,
     image: 'assets/img/ryzen-7900X.png',
     category: 'CPUs',
-    quantity: 4
+    quantity: 32
   },
   {
     id: 5,
     name: 'Ryzen 7700X',
-    price: 586,
+    price: 6750,
     image: 'assets/img/ryzen-7700X.png',
     category: 'CPUs',
-    quantity: 4
+    quantity: 43
   },
   {
     id: 6,
     name: 'RTX 4090 GYGABYTE',
-    price: 4000,
+    price: 34800,
     image: 'assets/img/rtx_4090.png',
     category: 'GPUs',
-    quantity: 4
+    quantity: 15
   },
   {
     id: 7,
     name: 'NVDIA RTX 3090 MSI',
-    price: 586,
+    price: 17390,
     image: 'assets/img/rtx-3090-msi.png',
     category: 'GPUs',
-    quantity: 4
+    quantity: 34
   },
   {
     id: 8,
     name: 'NVDIA RTX 3080 MSI',
-    price: 586,
+    price: 13525,
     image: 'assets/img/rtx-3080-msi.png',
     category: 'GPUs',
-    quantity: 4
+    quantity: 37
   },
   {
     id: 9,
     name: 'Radeon 6950 XT MSI',
-    price: 586,
+    price: 15500,
     image: 'assets/img/radeon-6950XT.png',
     category: 'GPUs',
-    quantity: 4
+    quantity: 33
   },
   {
     id: 10,
     name: 'Radeon 6900 XT Aorus',
-    price: 586,
+    price: 13525,
     image: 'assets/img/radeon-6900XT.png',
     category: 'GPUs',
-    quantity: 4
+    quantity: 26
   },
   {
     id: 11,
     name: 'GYGABYTE Z790 Aero G',
-    price: 586,
+    price: 9500,
     image: 'assets/img/GIGABYTE-Z790-AERO-G.png',
     category: 'Motherboard',
-    quantity: 4
+    quantity: 18
   },
   {
     id: 12,
     name: 'GIGABYTE Z690I AORUS Ultra Plus D4',
-    price: 586,
+    price: 11600,
     image: 'assets/img/GIGABYTE-Z690I-AORUS-Ultra-Plus-D4.png',
     category: 'Motherboard',
-    quantity: 4
+    quantity: 11
   },
   {
     id: 13,
     name: 'ASUS TUF Gaming X670E PLUS',
-    price: 586,
+    price: 12000,
     image: 'assets/img/ASUS-TUF-Gaming-X670E-PLUS.png',
     category: 'Motherboard',
-    quantity: 4
+    quantity: 23
   },
   {
     id: 14,
     name: 'ASUS ROG Strix X670E E',
-    price: 586,
+    price: 10000,
     image: 'assets/img/ASUS-ROG-Strix-X670E-E.png',
     category: 'Motherboard',
-    quantity: 4
+    quantity: 19
   },
   {
     id: 15,
     name: 'ASUS ROG Crosshair X670E Hero',
-    price: 586,
+    price: 8700,
     image: 'assets/img/ASUS-ROG-Crosshair-X670E-Hero.png',
     category: 'Motherboard',
-    quantity: 4
+    quantity: 9
   },
   {
     id: 16,
     name: 'Dominator DDR5 2x32 GB 6200 mHz',
-    price: 586,
+    price: 4700,
     image: 'assets/img/dominator-DDR5-2x32gb-6200mhz.png',
     category: 'RAM',
-    quantity: 4
+    quantity: 12
   },
   {
     id: 17,
     name: 'Corsair DDR5 2x32 GB 5500 mHz',
-    price: 586,
+    price: 3800,
     image: 'assets/img/corsair-DDR5-2x32gb-5500mhz.png',
     category: 'RAM',
-    quantity: 4
+    quantity: 26
   },
   {
     id: 18,
     name: 'Dominator DDR5 2x16 GB 5600 mHz',
-    price: 586,
+    price: 2500,
     image: 'assets/img/dominator-DDR5-2x16gb-5600mhz.png',
     category: 'RAM',
-    quantity: 4
+    quantity: 18
   },
   {
     id: 19,
     name: 'Vengeance DDR5 2x16 GB 6000 mHz',
-    price: 586,
+    price: 3300,
     image: 'assets/img/vengeance-DDR5-2x16gb-6000mhz.png',
     category: 'RAM',
-    quantity: 4
+    quantity: 11
   },
   {
     id: 20,
     name: 'Vengeance DDR4 2x16 GB 3600 mHz',
-    price: 586,
+    price: 1600,
     image: 'assets/img/vengeance-DDR4-2x16gb-3600mhz.png',
     category: 'RAM',
-    quantity: 4
+    quantity: 14
   },
 ]
 
@@ -181,7 +181,7 @@ function printProducts() {
     <div class="products__data">
       <h2 class="products__name">${product.name}</h2>
       <div class="">
-        <h3 class="products__price">$ ${product.price}</h3>
+        <h3 class="products__price"> ${numberToCurrency(product.price)}</h3>
         <span class="products__quantity">Quedan solo ${product.quantity} unidades</span>
       </div>
       <button type="button" class="button products__button addToCart" data-id="${product.id}">
@@ -217,7 +217,7 @@ function printCart() {
     </div>
 
     <div class="cart__details">
-      <h3 class="cart__title">${product.name} <span class="cart__price">$ ${product.price}</span></h3>
+      <h3 class="cart__title">${product.name} <span class="cart__price"> ${numberToCurrency(product.price)}</span></h3>
 
       <div class="cart__amount">
         <div class="cart__amount-content">
@@ -237,7 +237,7 @@ function printCart() {
 
       <span class="cart__subtotal">
         <span class="cart__stock">Quedan ${product.quantity - article.qty} unidades</span>
-        <span class="cart__subtotal-price">${product.price * article.qty}</span>
+        <span class="cart__subtotal-price">${numberToCurrency(product.price * article.qty)}</span>
       </span>
     </div>
   </article>`
