@@ -125,3 +125,13 @@ const printProduct = function discover() {
 const randonButton = document.getElementById('random-button')
 
 randonButton.addEventListener('click', printProduct)
+
+const footerProductsLinks = document.querySelectorAll('.product-footer__link')
+
+for (let i = 0; i < footerProductsLinks.length; i++) {
+  footerProductsLinks[i].addEventListener('click', function () {
+    console.log('si funciono')
+    const filter = document.getElementById(`product-footer__link${i}`)
+    filter.click()
+  })
+}
